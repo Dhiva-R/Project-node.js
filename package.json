@@ -1,8 +1,8 @@
 {
   "name": "mernbackend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple web app",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/app.js -e js,hbs"
@@ -22,5 +22,15 @@
   },
   "devDependencies": {
     "express-http-proxy": "^1.6.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhiva-R/Project-node.js.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/Dhiva-R/Project-node.js/issues"
+  },
+  "homepage": "https://github.com/Dhiva-R/Project-node.js#readme"
+
 }
