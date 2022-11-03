@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    {{>header}}
+</head>
+<body>
+   
+   
+    <div  class="container">
+        <div class="heading">Apply as a Employee</div>
+       
+          <form action="/register" method="POST">
+         <div class="card-details">
+            <div class="card-box">
+                <span class="details"></span>
+        <input type="text" class="form-control" placeholder="First Name *" value=""
+        name="firstname"/>
+    </div>
+   
+   <div class="card-box">
+                <span class="details"></span>
+        <input type="password" class="form-control" placeholder="password *" value=""
+        name="password"/>
+    </div>
+
+
+    <div class="card-box">
+                <span class="details"></span>
+        <input type="text" class="form-control" placeholder="Last Name *" value=""
+        name="lastname"/>
+     </div>
+     
+    <div class="card-box">
+                <span class="details"></span>
+        <input type="password" class="form-control" placeholder="Confirm password *" value=""
+        name="confirmpassword"/>
+</div>
+      
+   <div class="card-box">
+                <span class="details"></span>
+        <input type="text" class="form-control" placeholder="Your Email *" value=""
+        name="email"/>
+   </div>
+   <div class="card-box">
+                <span class="details"></span>
+        <input type="text" minlength="10" maxlength="10"
+        class="form-control" placeholder="Your Phone *" value=""
+        name="phone"/>
+   </div>
+       
+   <div class="card-box">
+<span class="details"></span>
+<input type="text" placeholder="Enter Security Question *" 
+value=""name="security"/>
+</div> 
+
+<div class="card-box">
+<span class="details"></span>
+<input type="text" class="form-control" placeholder="Enter your Answer *" value=""
+name="Answer"/></div>
+</div>
+
+
+
+      <div class="circle-form">
+                <span class="circle-title">Gender</span>
+      <div class="category">
+            <input type="radio" name="gender" value="male" checked>
+            <span>Male</span>
+        
+      
+            <input type="radio" name="gender" value="female" checked>
+            <span>Female</span>
+      
+        </div>
+   </div>
+   
+
+  
+  <div class="button">
+    <input type="submit" value="Register">
+  </div>
+
+</form>
+  </div>
+</body>
+</html>
