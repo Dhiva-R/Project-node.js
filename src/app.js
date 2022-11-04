@@ -114,7 +114,7 @@ app.post('/login',async(req,res)=>{
     }
 })
 
-app.get("/",function(req,res){
+app.get("/",(req,res)=>{
     var result='App is running'
     res.send(result);
 }).listen(app.get('port'),function(){
