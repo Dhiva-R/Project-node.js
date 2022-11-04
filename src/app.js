@@ -117,6 +117,6 @@ app.post('/login',async(req,res)=>{
 app.get("/",(req,res)=>{
     var result='App is running'
     res.send(result);
-}).listen(app.get('PORT'),function(){
+}).listen(app.get('port'),function(){
     console.log('Server listening on port',app.get('port'));
 })
