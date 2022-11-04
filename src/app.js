@@ -12,7 +12,7 @@ const { json } = require('express');
 
 
 const port=process.env.port || 3000 
-const host = '0.0.0.0';
+
 
 const static_path=path.join(__dirname,"../public");
 const template_path=path.join(__dirname,"../templates/views");
@@ -114,7 +114,9 @@ app.post('/login',async(req,res)=>{
     }
 })
 
-app.listen(port,()=>
-{
-    console.log(`server is running at port no ${port}`);
-})
+app.get("/",function(req,res){
+    var result='App is running'
+    res.send(result);
+}).listen(app.get('port'),function(){
+    console.log('Server listening on port',app.get('port'));
+});
