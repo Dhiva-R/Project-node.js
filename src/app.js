@@ -12,6 +12,7 @@ const { json } = require('express');
 
 
 const port=process.env.port || 3000 
+const host = '0.0.0.0';
 
 const static_path=path.join(__dirname,"../public");
 const template_path=path.join(__dirname,"../templates/views");
