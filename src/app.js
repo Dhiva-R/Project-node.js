@@ -11,7 +11,7 @@ const { json } = require('express');
 //const Registerr = require('./models/registers');
 
 
-const PORT=process.env.PORT || 3000 
+const port=process.env.PORT || 3000 
 
 
 const static_path=path.join(__dirname,"../public");
@@ -118,5 +118,5 @@ app.get("/",(req,res)=>{
     var result='App is running'
     res.send(result);
 }).listen(app.get('PORT'),function(){
-    console.log('Server listening on port',app.get('PORT'));
+    console.log('Server listening on port',app.get('port'));
 })
