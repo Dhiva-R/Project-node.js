@@ -23,7 +23,7 @@
     "nodemon": "^2.0.20",
     "serve-static": "^1.15.0",
     "babel-cli":"^6.26.0",
-    "babel-present-env":"^1.7.0"
+    "babel-preset-env":"^1.7.0"
   },
   "devDependencies": {
     "express-http-proxy": "^1.6.3"
