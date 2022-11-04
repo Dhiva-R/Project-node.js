@@ -11,7 +11,7 @@ const { json } = require('express');
 //const Registerr = require('./models/registers');
 
 
-const port=process.env.PORT || 3000 
+const PORT=process.env.PORT || 3000 
 
 
 const static_path=path.join(__dirname,"../public");
