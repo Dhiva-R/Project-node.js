@@ -27,6 +27,7 @@ app.use(express.static(static_path));
 app.set("view engine","hbs");
 app.set("views", template_path);
 
+hbs.registerPartials(template_path);
 hbs.registerPartials(partials_path);
 
 
