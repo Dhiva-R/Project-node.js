@@ -104,7 +104,7 @@ app.post('/login',async(req,res)=>{
       console.log("The token part "+token);
 
         if(isMatch){
-            res.status(201).send("Login Successfully!");
+            res.status(201).render("dashboard");
         }else{
             res.send("Invalid password Details");
         }
